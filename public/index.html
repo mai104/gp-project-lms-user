@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/eduara-favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#3949AB" />
+    <meta
+      name="description"
+      content="منصة Eduara التعليمية - طريقك للنجاح"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- إضافة الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <title>Eduara - منصة تعليمية متكاملة</title>
+    
+    <style>
+      /* تحديد الخطوط الافتراضية حسب اللغة */
+      [lang="ar"] {
+        font-family: 'Tajawal', sans-serif;
+      }
+      
+      [lang="en"] {
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      /* مؤشر التحميل المبدئي */
+      .initial-loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        background-color: #F5F7FA;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+      }
+      
+      .dark .initial-loader {
+        background-color: #121212;
+      }
+      
+      .loader-spinner {
+        width: 48px;
+        height: 48px;
+        border: 5px solid #3949AB;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        animation: rotation 1s linear infinite;
+      }
+      
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>يجب تفعيل JavaScript لتشغيل هذا التطبيق.</noscript>
+    <div id="root">
+      <!-- مؤشر التحميل المبدئي -->
+      <div class="initial-loader">
+        <div class="loader-spinner"></div>
+      </div>
+    </div>
+  </body>
+</html>
